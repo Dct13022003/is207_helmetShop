@@ -1,0 +1,29 @@
+.form-group {
+    position: relative;
+}
+
+.fa-eye,
+.fa-eye-slash {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.form-group input[type="password"]~.fa-eye {
+    display: none;
+}
+
+.form-group input[type="text"]~.fa-eye-slash {
+    display: none;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    border-color: #e74a3b;
+    background-image: none;
+}
+
+/* Kiểu dáng chung */
+
+
+

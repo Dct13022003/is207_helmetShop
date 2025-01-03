@@ -1,0 +1,147 @@
+.swiper-slide-active.about_us::before {
+    opacity: 1;
+}
+
+.about_us::before {
+    content: "";
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, #181818 0%, #000 100%);
+    -webkit-transition: all 1s linear .5s;
+    transition: all 1s linear .5s;
+    z-index: -1;
+}
+
+.about_us--wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.about_us--content {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 4px;
+    max-width: 584px;
+    width: 100%;
+}
+
+.fp-overflow {
+    overflow-x: hidden !important;
+    outline: none;
+}
+
+.about_action--wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.d-wrap {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.about_action--lf {
+    width: calc(100%*6/12);
+}
+
+
+.d-item {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.about_action--rt {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.about_action--rt-wrap {
+    margin-right: -48px;
+}
+
+.swiper-slide-active .about_action--rt .about_action--rt-img {
+    -webkit-transform: translateX(6%);
+    transform: translateX(6%);
+}
+
+.about_action--rt-img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+
+.about_see--wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.about_see--list {
+    max-width: 54.8rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 3.2rem;
+    -webkit-transition: all 1.2s linear;
+    transition: all 1.2s linear;
+    max-height: 80vh;
+    overflow-y: auto;
+    opacity: 1;
+}
+
+.about_see--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: .4rem;
+}
+
+.fw-7 {
+    font-weight: 700;
+}
+
+.title-sm3 {
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+.t-up {
+    text-transform: uppercase;
+}
